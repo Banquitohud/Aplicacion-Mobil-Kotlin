@@ -88,4 +88,12 @@ Abre el proyecto en Android Studio.
 Ejecuta la aplicación en un emulador o dispositivo Android.
 ¡Explora la predicción meteorológica en tiempo real!
 
-![Imagen de WhatsApp 2024-02-19 a las 19 05 27_0b3f0d74](https://github.com/Banquitohud/App-Mobil/assets/126008295/ba231f17-0f57-454c-a46b-45a5293cdf78)
+## Diseño De Mockups
+
+
+![image](https://github.com/Banquitohud/Aplicacion-Mobil-Kotlin/assets/126008295/7ea0eceb-1a49-441d-9f4f-d8708efd1a1a)
+![image](https://github.com/Banquitohud/Aplicacion-Mobil-Kotlin/assets/126008295/badfafad-c7e3-49a8-bb34-69ce9c7cfc18)
+
+
+
+
