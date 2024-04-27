@@ -1,0 +1,29 @@
+La aplicación móvil desarrollada en Kotlin para Android es una aplicación meteorológica que utiliza la ubicación del dispositivo para mostrar la predicción del tiempo actual. A continuación, se describe cómo funciona toda la aplicación, paso a paso:
+
+Solicitud de Permisos y Obtención de la Ubicación:
+
+Al iniciar la aplicación, se presenta la pantalla StarScreeen (StarScreeen.kt), que solicita los permisos necesarios para acceder a la ubicación del dispositivo.
+Una vez concedidos los permisos, la aplicación utiliza FusedLocationProviderClient para obtener la última ubicación conocida del dispositivo.
+Si no se puede obtener una ubicación, se solicita una nueva ubicación utilizando requestLocationUpdates.
+Pasar la Ubicación a la Actividad Principal:
+
+Con la latitud y longitud obtenidas, la aplicación inicia la actividad principal MainActivity (MainActivity.kt), pasando estos valores como extras en el intent.
+Solicitud de Datos Meteorológicos:
+
+En MainActivity, se recogen la latitud y longitud de los extras del intent y se utiliza esta información para realizar una solicitud a la API de OpenWeatherMap mediante Volley.
+La URL de la API incluye la latitud y longitud, y una clave API para autenticar la solicitud.
+Procesamiento y Visualización de Datos:
+
+Una vez que se recibe la respuesta de la API, se procesa el objeto JSON para extraer la información meteorológica relevante, como la temperatura actual, la presión, la humedad, la velocidad del viento, etc.
+Esta información se muestra en la interfaz de usuario definida en activity_main.xml (activity_main.xml), utilizando diferentes TextViews para cada pieza de datos.
+Diseño de la Interfaz de Usuario:
+
+La interfaz de usuario se diseña utilizando XML, donde se definen MaterialCardViews para mostrar la información de manera estructurada y estéticamente agradable.
+Se utiliza un ScrollView para permitir el desplazamiento en caso de que el contenido exceda la altura de la pantalla.
+Configuración y Dependencias del Proyecto:
+
+El archivo build.gradle.kts (build.gradle.kts) del proyecto especifica las dependencias necesarias, como Volley para las solicitudes de red y la biblioteca de servicios de ubicación de Google para obtener la ubicación del dispositivo.
+También se configura el soporte para Kotlin y se establecen las versiones de SDK objetivo y mínimo.
+Permisos en AndroidManifest.xml:
+
+En AndroidManifest.xml (AndroidManifest.xml), se declaran los permisos necesarios para el acceso a Internet y la ubicación del dispositivo.
