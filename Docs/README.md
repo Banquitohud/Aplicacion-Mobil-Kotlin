@@ -9,8 +9,8 @@ Desarrollo de proyecto en Kotlin para Android
     - [Aplicación De Recetas](#aplicación-de-recetas)
     - [Aplicación de Predicción Meteorológica](#aplicación-de-predicción-meteorológica)
 2. [Aplicación Meteorológica para Android utilizando Kotlin](#aplicación-meteorológica-para-android-utilizando-kotlin)
-    - [Cómo funciona el API](#cómo-funciona-el-api)
-    - [Cómo funciona la Aplicación](#cómo-funciona-la-aplicación)
+    - [Como funciona el api](#como-funciona-el-api)
+    - [Como Funciona La Aplicación](#como-funciona-la-aplicación)
 <!-- tocstop -->
 
 ## Ideas de proyectos
@@ -72,7 +72,7 @@ Este proyecto consiste en el desarrollo de una aplicación meteorológica para d
 
 
 
-##Como funciona el api
+## Como funciona el api
 ---
 
 El API utilizado en el proyecto de la aplicación meteorológica para Android desarrollado en Kotlin se comunica con el servicio de OpenWeatherMap para obtener datos meteorológicos en tiempo real. La interacción con el API se realiza mediante solicitudes HTTP utilizando la biblioteca Volley. A continuación, se describe cómo se realiza esta comunicación con el API:
@@ -98,21 +98,24 @@ queue.add(jsonRequest)
 ---
 private fun setValues(response:JSONObject){
     // Extracción de datos del objeto JSON y actualización de la UI
-    city.text=response.getString("name")
+    <city.text=response.getString("name")
     coordinates.text="${lat} , ${long}"
     weather.text=response.getJSONArray("weather").getJSONObject(0).getString("main")
-    // Más extracciones y actualizaciones...
+   // Más extracciones y actualizaciones<
 }
 
 ---
+
 **Permisos y Ubicación:** La aplicación solicita permisos de ubicación al usuario para obtener la latitud y longitud actuales, que son necesarios para realizar la solicitud al API. Esto se maneja en la clase StarScreeen.kt, que verifica los permisos y, si están concedidos, obtiene la última ubicación conocida del dispositivo.
 
-if(CheckPermission()) {
-    if(LocationEnable()){
-        mfusedlocation.lastLocation.addOnCompleteListener{
+---
+
+<if(CheckPermission()) {
+   < if(LocationEnable()){
+       < mfusedlocation.lastLocation.addOnCompleteListener{
             task->
             var location:Location?=task.result
-            if(location==null) {
+           < if(location==null) {
                 NewLocation()
             } else {
                 // Iniciar MainActivity con los datos de latitud y longitud
@@ -127,7 +130,7 @@ if(CheckPermission()) {
 
 ---
 
-### Como Funciona La Aplicacion
+### Como Funciona La Aplicación
 La aplicación móvil desarrollada en Kotlin para Android es una aplicación meteorológica que utiliza la ubicación del dispositivo para mostrar la predicción del tiempo actual. A continuación, se describe cómo funciona toda la aplicación, paso a paso:
 
 Solicitud de Permisos y Obtención de la Ubicación:
@@ -216,4 +219,3 @@ El API utilizado en el proyecto de la aplicación meteorológica para Android de
 > }
 
 ---
-
