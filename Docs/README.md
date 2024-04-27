@@ -8,6 +8,7 @@ Desarrollo de proyecto en Kotlin para Android
     - [Aplicación de Lanzar Dados](#aplicación-de-lanzar-dados)
     - [Aplicación De Recetas](#aplicación-de-recetas)
     - [Aplicación de Predicción Meteorológica](#aplicación-de-predicción-meteorológica)
+    - [Cómo funciona el API](#cómo-funciona-el-api)
 2. [Aplicación Meteorológica para Android utilizando Kotlin](#aplicación-meteorológica-para-android-utilizando-kotlin)
 <!-- tocstop -->
 
@@ -68,3 +69,4 @@ Este proyecto consiste en el desarrollo de una aplicación meteorológica para d
 ![Imagen de mockups](https://github.com/Banquitohud/Aplicacion-Mobil-Kotlin/assets/126008295/7ea0eceb-1a49-441d-9f4f-d8708efd1a1a)
 ![Imagen de mockups](https://github.com/Banquitohud/Aplicacion-Mobil-Kotlin/assets/126008295/badfafad-c7e3-49a8-bb34-69ce9c7cfc18)
 
+[Ver cómo funciona el API](Docs/Como%20funciona%20el%20api)
